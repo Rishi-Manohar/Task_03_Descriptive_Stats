@@ -11,7 +11,11 @@ import pandas as pd
 from collections import defaultdict, Counter
 
 # %%
-os.chdir("D:\# %%
+os.chdir("C:\Research Task 4")
+# %% [markdown]
+# ### Using Python
+
+# %%
 import numpy as np 
 import pandas as pd 
 import polars as pl
