@@ -1,0 +1,37 @@
+Q: Was it difficult to get the same results without using a data library? What problems did you run into, and how did you resolve them?
+A: Definitely. Trying to match the functionality of Pandas or Polars using only native Python was like reinventing the wheel.
+
+The main struggle wasn’t just the length of code but the level of detail I had to manage myself. Tasks like grouping by page_id and counting unique ad_ids — which libraries handle elegantly — became far more tedious. I had to simulate what a .groupby() method does by building dictionaries, tracking sets, and looping through rows manually.
+
+It wasn’t impossible, but it made me appreciate how much abstraction and optimization these libraries provide. I eventually managed to replicate the results, but the process reminded me why data libraries are essential for serious analysis — they save time and reduce cognitive overhead.
+
+Q: Did you find one method more efficient or user-friendly than the others?
+A: Without question, using Pandas or Polars was a smoother ride.
+
+Pandas shines in terms of ease of use — its syntax reads almost like English, and its documentation is unmatched. Meanwhile, Polars surprised me with its speed. On larger datasets, it flew through operations that Pandas or native Python took noticeably longer to process.
+
+Compared to writing everything from scratch in vanilla Python, both libraries felt like using power tools instead of hand tools. Native Python has its place, especially for small tasks or when teaching core logic, but for anything data-heavy, these libraries are game-changers.
+
+Q: What would you tell a junior data analyst who’s just getting started?
+A: I’d tell them to start with Pandas — no hesitation.
+
+It’s the industry standard for a reason: it’s easy to learn, widely used, and extremely versatile. Once they get comfortable and start running into performance bottlenecks or working with big data, they can look into Polars as a more high-performance alternative.
+
+The goal isn’t to avoid native Python altogether, but rather to use the right tool for the job — and for most analytics tasks, that tool is Pandas.
+
+Q: Can tools like ChatGPT provide code templates for different approaches?
+A: Yes, and it’s one of their biggest strengths.
+
+Whether I needed a starting point for a pure Python loop or a Pandas one-liner, ChatGPT could generate something usable almost instantly. It’s especially helpful for prototyping or when you hit a creative block — just describe what you’re trying to do, and it’ll draft the scaffolding for you.
+
+It’s not perfect, but it’s like having a pair programmer who works at lightning speed.
+
+Q: What’s the default approach suggested by these AI tools when asked to compute summary stats?
+A: Almost always Pandas.
+
+Ask ChatGPT for descriptive statistics, and chances are it’ll point you to something like df.describe() — and with good reason. It’s quick, effective, and gives you a snapshot of your data in seconds.
+
+Q: Do you agree with that recommendation? Why?
+A: I do — especially for early analysis or general reporting.
+
+Pandas hits the sweet spot between simplicity and power. Its functions are reliable and designed for exactly this kind of work. For beginners and even many experienced analysts, it’s the most efficient way to explore data quickly and accurately. In rare cases, you might need to go beyond it, but for the vast majority of workflows, it’s more than enough.
